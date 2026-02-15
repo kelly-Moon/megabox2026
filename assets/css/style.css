@@ -253,15 +253,15 @@
   height: 600px;
 }
 .slider .ss1 {
-  background: url(../img/main_slider01.jpg) no-repeat center center;
+  background: url(../img/main_slider01.webp) no-repeat top center;
   background-size: cover;
 }
 .slider .ss2 {
-  background: url(../img/main_slider02_2000.jpg) no-repeat center center;
+  background: url(../img/main_slider02.webp) no-repeat top center;
   background-size: cover;
 }
 .slider .ss3 {
-  background: url(../img/main_slider03_2000.jpg) no-repeat center center;
+  background: url(../img/main_slider06.webp) no-repeat top center;
   background-size: cover;
 }
 .slider .swiper-slide h2 {
@@ -331,6 +331,7 @@
 
 .poster {
   position: relative;
+  z-index: 1000;
 }
 .poster img {
   display: block;
@@ -368,6 +369,49 @@
   background-position: 0 -100px;
 }
 
+.poster_overlay {
+  width: 100%;
+  height: 100%;
+  padding: 50px 30px 0 30px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.poster_overlay .summary {
+  width: 100%;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+.poster_overlay .score {
+  width: 100%;
+  border-top: 1px solid #c1c1c1;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+.poster_overlay .score span {
+  font-size: 15px;
+  vertical-align: 3px;
+  color: #c1c1c1;
+}
+.poster_overlay .score strong {
+  font-size: 30px;
+  font-weight: 300;
+  padding-left: 20px;
+}
+.poster:hover .poster_overlay {
+  opacity: 1;
+}
 .infor {
   background-color: #fff;
   padding: 17px;
