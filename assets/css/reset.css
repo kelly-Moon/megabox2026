@@ -168,10 +168,7 @@ img {
 
 /* 아이콘 이미지 최적화 작업 */
 .icon {
-  background-image: image-set(
-    url("../img/icon.png") 1x,
-    url("../img/icon@2.png") 2x
-  );
+  background-image: url("../img/icon.png");
 }
 
 /* .icon {background-image: url(../img/icon.png);}
