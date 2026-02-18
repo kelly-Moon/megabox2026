@@ -27,7 +27,7 @@
   height: 20px;
 }
 .swiper-pagination-bullet-active {
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 1);
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-horizontal.swiper-pagination-bullets {

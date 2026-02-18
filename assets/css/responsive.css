@@ -181,7 +181,7 @@
     display: none;
   }
   #mNav {
-    right: 6px;
+    /* right: 6px; */
   }
   #movie .row {
     background-color: #fff;

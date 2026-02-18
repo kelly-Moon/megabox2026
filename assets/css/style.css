@@ -20,12 +20,7 @@
 }
 
 /* 레이아웃 */
-#mNav {
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 16px;
-}
+
 #header {
   width: 100%;
   /* height: 64px; */
@@ -75,12 +70,46 @@
 }
 
 /* 모바일용 메뉴 */
+#mNav {
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  display: none;
+}
 .ham {
   display: block;
   width: 25px;
   height: 10px;
   background: rgba(0, 0, 0, 0);
   padding: 15px 10px 10px 10px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+#mNav ul {
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(80, 0, 217, 1);
+  position: absolute;
+  top: 53px;
+  right: 0;
+  text-align: center;
+  transform: translateX(100%);
+  transition: transform 0.5s;
+}
+#mNav ul li {
+  border-bottom: 1px solid #a8a8a873;
+  padding: 24px;
+}
+#mNav ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+#mNav ul.active {
+  transform: translateX(0);
 }
 
 /* 손가락 터치 부분이라 영역을 넓게 해줌 */
